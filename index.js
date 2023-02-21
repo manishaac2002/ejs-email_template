@@ -4,12 +4,12 @@ var app = express()
 
 app.get("/", function (req, res) {
 	let user = req.query.name
-	res.render("../views/hello.ejs", { tag:"Email confirmation", name:user,imglink:"https://randomuser.me/api/portraits/med/men/75.jpg", para: "Lorem Ipsum is simply <b>dummy</ b> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged" });
-});
-
-app.get("/head", function (req, res) {
-	res.render("../views/head.ejs", { headObject: "Ejs is fun" })
-});
+	res.render("../views/hello.ejs", { tag:"Email confirmation", name:user,imglink:"https://randomuser.me/api/portraits/med/men/75.jpg", 
+	para: "We have sent email to manishaac2002@gmail.com to confirm the validity of our email address.After receicing the email follow the link provided to complete you registration "})
+	})
+// app.get("/head", function (req, res) {
+// 	res.render("../views/head.ejs", { headObject: "Ejs is fun" })
+// });
 app.listen(3000, function () {
 	console.log("server is listening!!!");
 });
