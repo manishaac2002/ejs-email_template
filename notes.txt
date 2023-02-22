@@ -1,0 +1,27 @@
+<!-- <body>
+
+  <table class ="center" >
+    <tr><th>
+      
+      
+      <h1 style="color :rgb(99, 102, 101)"> <%=tag %></h1>
+      <h2 style="color: blueviolet;"><%= name %></h2>
+
+      <p> <%= p %></p>
+      <img src=<%=imglink %> alt="">
+      
+      <style>
+        th {
+          border:1.5px solid black;
+          background-color: rgb(171, 201, 196)
+        }
+        table {
+          height: 35%;
+          width: 37%;
+        }
+        table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+       
+        </style>

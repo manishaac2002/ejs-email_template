@@ -1,23 +1,81 @@
 
-<h1 style="color :rgb(99, 102, 101)"> <%=tag %></h1>
-<h2 style="color: blueviolet;"><%= name %></h2>
-<p> <%= para %></p>
-<img src=<%=imglink %> alt="">
- <table style= "width:100%">
-    <tr>
-      <th>Person 1</th>
-      <th>Person 2</th>
-      <th>Person 3</th>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 750px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+#paragraph{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 97%;
+  font-size: 18px;
+}
+
+
+th {
+          border:1px solid black;
+          border-radius: 5px;
+        }
+        table {
+          height: 25%;
+          width: 37%;
+        }
+        table.center {
+                margin-left: auto; 
+                margin-right: auto;
+}
+h1{
+  color :rgb(121, 122, 122)
+}
+h2{
+  text-align:center;
+  color :rgb(114, 88, 138) ;
+}
+  h3{
+    color: rgb(88, 197, 143);
+  }   
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <h1><%=emailtag %></h1>
+    <hr>  
+  <h2 ><%= name %></h2>
+  <img src=<%=imglink%> alt="Denim Jeans" >
+  <h3><%=otptag  %></h3>
+  <table class ="center">
+      <tr>
+      <th><%= Otp_1 %></th>
+      <th><%= Otp_2 %></th>
+      <th><%= Otp_3 %></th>
+      <th><%= Otp_4 %></th>
+      <th><%= Otp_5 %></th>
+      <th><%= Otp_6 %></th>
     </tr>
-    <tr>
-      <td>Emil</td>
-      <td>Tobias</td>
-      <td>Linus</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>14</td>
-      <td>10</td>
-      </tr>
-     
-</table>
+  </table>
+  <h4><%= validitytag %></h4>
+  <p><%= p %></p>
+  <p id="paragraph"><%= para %></p>
+</div>
+
+</body>
+</html>
